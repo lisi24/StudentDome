@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<table border="1" style="width:300px">
+    <tr>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+
+    </tr>
+    <tr th:each="aaa : ${list}">
+        <td th:text="${aaa.stuname}"></td>
+        <td th:text="${aaa.sex}"></td>
+        <td th:text="${aaa.age}"></td>
+    </tr>
+</table>
+
+
+<a href="add">新增</a>
+</body>
+</html>

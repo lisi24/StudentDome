@@ -1,0 +1,14 @@
+server:
+  port: 1234
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/stu?useUnicode=true&amp;characterEncoding=UTF-8
+    username: root
+    password: 111
+  mvc:
+    view:
+      prefix: /templates/
+      suffix: .html
+mybatis:
+  mapper-locations: classpath:com/y/mapper/*.xml
